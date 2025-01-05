@@ -1,6 +1,4 @@
 import { NavLink } from 'react-router';
-import crest from '../assets/crest.png';
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,6 +8,20 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from '@/components/ui/sheet';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
+
+import CrestHeader from './CrestHeader';
 
 const navItems: { title: string; links: { name: string; href: string }[] }[] = [
   {
@@ -85,30 +97,25 @@ const navItems: { title: string; links: { name: string; href: string }[] }[] = [
 export default function Nav() {
   return (
     <nav className="flex justify-around my-4 mx-auto items-center">
-      <NavLink to="/" className="flex items-center">
-        <img className="w-28" src={crest} alt="Lambda Psi Rho Crest" />
+      <CrestHeader />
 
-        <div>
-          <p>Lambda Psi Rho</p>
-          <hr />
-          <p>Fraternity, Inc.</p>
-        </div>
-      </NavLink>
-
-      <NavigationMenu>
+      {/* Desktop Navigation */}
+      <NavigationMenu className="hidden md:flex">
         <NavigationMenuList>
-          {navItems.map((item) => (
+          {navItems.map(({ title, links }) => (
             <NavigationMenuItem>
-              <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="uppercase">
+                {title}
+              </NavigationMenuTrigger>
 
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  {item.links.map((link) => (
+                <ul className="flex flex-col gap-3 p-6 md:w-[500px]">
+                  {links.map(({ name, href }) => (
                     <NavigationMenuLink
-                      href={link.href}
+                      href={href}
                       className={navigationMenuTriggerStyle()}
                     >
-                      {link.name}
+                      {name}
                     </NavigationMenuLink>
                   ))}
                 </ul>
@@ -117,6 +124,42 @@ export default function Nav() {
           ))}
         </NavigationMenuList>
       </NavigationMenu>
+
+      {/* Mobile Navigation */}
+      <div className="flex md:hidden">
+        <Sheet>
+          <SheetTrigger>Open</SheetTrigger>
+          <SheetContent>
+            <SheetHeader className="my-8">
+              <CrestHeader />
+            </SheetHeader>
+
+            <nav className="flex flex-col">
+              <Accordion type="single" collapsible>
+                {navItems.map(({ title, links }) => (
+                  <AccordionItem value={title}>
+                    <AccordionTrigger className="uppercase">
+                      {title}
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <ul className="flex flex-col">
+                        {links.map(({ name, href }) => (
+                          <NavLink
+                            to={href}
+                            className={navigationMenuTriggerStyle()}
+                          >
+                            {name}
+                          </NavLink>
+                        ))}
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </div>
     </nav>
   );
 }
