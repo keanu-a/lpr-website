@@ -7,6 +7,7 @@ import About from './pages/About.tsx';
 import PageLayout from './layouts/PageLayout.tsx';
 
 import './index.css';
+import FoundingChapter from './pages/FoundingChapter.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -15,7 +16,8 @@ createRoot(document.getElementById('root')!).render(
         <Route index element={<Home />} />
 
         <Route element={<PageLayout />}>
-          <Route path="about" element={<About />} />
+          <Route path="about-us" element={<About />} />
+          <Route path="founding-chapter" element={<FoundingChapter />} />
         </Route>
       </Routes>
     </BrowserRouter>

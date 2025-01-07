@@ -3,7 +3,7 @@ import crest from '../assets/crest.png';
 
 export default function CrestHeader() {
   return (
-    <NavLink to="/" className="flex items-center">
+    <NavLink to="/" className="flex items-center text-white">
       <img className="w-28" src={crest} alt="Lambda Psi Rho Crest" />
 
       <div>

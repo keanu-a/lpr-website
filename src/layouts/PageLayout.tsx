@@ -4,7 +4,7 @@ import Nav from '../components/Nav';
 export default function PageLayout() {
   return (
     <div>
-      <Nav />
+      <Nav className="bg-black" />
       <Outlet />
     </div>
   );

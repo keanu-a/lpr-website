@@ -23,6 +23,8 @@ import {
 
 import CrestHeader from './CrestHeader';
 
+import { cn } from '@/lib/utils';
+
 const navItems: { title: string; links: { name: string; href: string }[] }[] = [
   {
     title: 'About',
@@ -94,9 +96,11 @@ const navItems: { title: string; links: { name: string; href: string }[] }[] = [
   },
 ];
 
-export default function Nav() {
+export default function Nav({ className }: { className?: string }) {
   return (
-    <nav className="flex justify-around my-4 mx-auto items-center">
+    <nav
+      className={cn(className, 'flex justify-around py-4 mx-auto items-center')}
+    >
       <CrestHeader />
 
       {/* Desktop Navigation */}
@@ -104,7 +108,7 @@ export default function Nav() {
         <NavigationMenuList>
           {navItems.map(({ title, links }) => (
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="uppercase">
+              <NavigationMenuTrigger className="uppercase bg-transparent text-white">
                 {title}
               </NavigationMenuTrigger>
 
@@ -128,7 +132,7 @@ export default function Nav() {
       {/* Mobile Navigation */}
       <div className="flex md:hidden">
         <Sheet>
-          <SheetTrigger>Open</SheetTrigger>
+          <SheetTrigger className="text-white">Open</SheetTrigger>
           <SheetContent>
             <SheetHeader className="my-8">
               <CrestHeader />
