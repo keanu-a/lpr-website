@@ -13,11 +13,11 @@ export default function FoundingChapter() {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-bold mt-4">Founding Chapter</h1>
+    <div className="flex flex-col items-center py-8">
+      <h1 className="text-4xl font-bold">Founding Chapter</h1>
 
       <div className="flex flex-wrap justify-center gap-6 p-12">
-        {foundingChapterBrothers.map(({ className, _ }) => (
+        {foundingChapterBrothers.map(({ className }) => (
           <Button onClick={() => onClassSelect(className)}>{className}</Button>
         ))}
       </div>
