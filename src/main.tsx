@@ -6,21 +6,21 @@ import './index.css';
 import PageLayout from './layouts/PageLayout.tsx';
 import Home from './pages/Home.tsx';
 
-import About from './pages/About.tsx';
-import Academics from './pages/Academics.tsx';
-import Stepping from './pages/Stepping.tsx';
+import About from './pages/About/About.tsx';
+import Academics from './pages/About/Academics.tsx';
+import Stepping from './pages/About/Stepping.tsx';
 
-import Membership from './pages/Membership.tsx';
-import Expansion from './pages/Expansion.tsx';
-import Incorporation from './pages/Incorporation.tsx';
+import Membership from './pages/Membership/Membership.tsx';
+import Expansion from './pages/Membership/Expansion.tsx';
+import Incorporation from './pages/Membership/Incorporation.tsx';
 
-import FoundingChapter from './pages/FoundingChapter.tsx';
-import ActiveHouse from './pages/ActiveHouse.tsx';
-import AlumniChapter from './pages/AlumniChapter.tsx';
-import NationalBoard from './pages/NationalBoard.tsx';
+import FoundingChapter from './pages/Brothers/FoundingChapter.tsx';
+import ActiveHouse from './pages/Brothers/ActiveHouse.tsx';
+import AlumniChapter from './pages/Brothers/AlumniChapter.tsx';
+import NationalBoard from './pages/Brothers/NationalBoard.tsx';
 
-import LocalPhilanthropies from './pages/LocalPhilanthropies.tsx';
-import UpcomingEvents from './pages/UpcomingEvents.tsx';
+import LocalPhilanthropies from './pages/Philanthropy/LocalPhilanthropies.tsx';
+import UpcomingEvents from './pages/About/UpcomingEvents.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
