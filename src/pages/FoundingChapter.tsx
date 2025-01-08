@@ -16,9 +16,18 @@ export default function FoundingChapter() {
     <div className="flex flex-col items-center py-8">
       <h1 className="text-4xl font-bold">Founding Chapter</h1>
 
+      <Button
+        className="mt-8"
+        onClick={() => onClassSelect(foundingChapterBrothers[0].className)}
+      >
+        Founding Fathers
+      </Button>
+
       <div className="flex flex-wrap justify-center gap-6 p-12">
-        {foundingChapterBrothers.map(({ className }) => (
-          <Button onClick={() => onClassSelect(className)}>{className}</Button>
+        {foundingChapterBrothers.slice(1).map(({ className, greekLetter }) => (
+          <Button onClick={() => onClassSelect(className)}>
+            {greekLetter}
+          </Button>
         ))}
       </div>
 

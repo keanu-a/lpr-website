@@ -1,9 +1,11 @@
 export const foundingChapterBrothers: {
   className: string;
+  greekLetter: string;
   brothers: string[];
 }[] = [
   {
     className: 'Founding Fathers',
+    greekLetter: '',
     brothers: [
       'Sean Aguon',
       'Jeffrey Chao',
@@ -20,6 +22,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Alpha',
+    greekLetter: 'A',
     brothers: [
       'Jefferson Bustarde',
       'Markus Caligdong',
@@ -36,6 +39,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Beta',
+    greekLetter: 'B',
     brothers: [
       'Mark Dave Almachar',
       'Abraham Cheng',
@@ -49,6 +53,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Gamma',
+    greekLetter: 'Γ',
     brothers: [
       'Tony Boffelli',
       'Ronnie Corcuera',
@@ -62,6 +67,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Delta',
+    greekLetter: 'Δ',
     brothers: [
       'Robert Aker',
       'Emil Almachar',
@@ -75,6 +81,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Epsilon',
+    greekLetter: 'Ε',
     brothers: [
       'Robert Alvarez',
       'Deo Bustarde',
@@ -92,6 +99,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Zeta',
+    greekLetter: 'Ζ',
     brothers: [
       'Ian Cabanilla',
       'Austin Eskola',
@@ -104,14 +112,17 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Eta',
+    greekLetter: 'Η',
     brothers: ['AJ Cabuang', 'Andrew Helige', 'Tyler Kinney'],
   },
   {
     className: 'Theta',
+    greekLetter: 'Θ',
     brothers: ['Kavindu Amarasinghe', 'RB Rom', 'Joshoua Staana'],
   },
   {
     className: 'Iota',
+    greekLetter: 'I',
     brothers: [
       'Ricardo Aker',
       'Geoffrey Kirk Alcaraz',
@@ -127,6 +138,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Kappa',
+    greekLetter: 'K',
     brothers: [
       'Josh Cano',
       'Jacob Davis',
@@ -140,6 +152,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Lambda',
+    greekLetter: 'Λ',
     brothers: [
       'Raul Esteves',
       'Hung Le',
@@ -151,6 +164,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Mu',
+    greekLetter: 'Μ',
     brothers: [
       'Christian Corabo',
       'Jeff Kwong',
@@ -160,14 +174,17 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Nu',
+    greekLetter: 'N',
     brothers: ['Ryan Kim', 'Raphael Perry', 'Kevin Samuel'],
   },
   {
     className: 'Xi',
+    greekLetter: 'Ξ',
     brothers: ['Juan Carlos Comahig', 'Allister Magalued', 'Ivan Samuel'],
   },
   {
     className: 'Omicron',
+    greekLetter: 'Ο',
     brothers: [
       'Alan Cruz',
       'Brendan Hopson',
@@ -181,14 +198,17 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Pi',
+    greekLetter: 'Π',
     brothers: ['Derick Nguyen', 'Alex Pham', 'Joey Pontillas'],
   },
   {
     className: 'Rho',
+    greekLetter: 'Ρ',
     brothers: ['Saebyuk Lee', 'Nathan Toralba', 'Albert Tran'],
   },
   {
     className: 'Sigma',
+    greekLetter: 'Σ',
     brothers: [
       'Keanu Aloua',
       'Marlou DeCastro',
@@ -202,10 +222,12 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Tau',
+    greekLetter: 'Τ',
     brothers: ['Joseph Cano', 'Vincent Lee', 'Ian Sin'],
   },
   {
     className: 'Upsilon',
+    greekLetter: 'Y',
     brothers: [
       'Nicholas Hong',
       'Junior Macatlang',
@@ -215,6 +237,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Phi',
+    greekLetter: 'Φ',
     brothers: [
       'Eadrian Carreon',
       'Jeremy Co',
@@ -229,6 +252,7 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Chi',
+    greekLetter: 'Χ',
     brothers: [
       'Jordan Cadelina',
       'Chris Fernandez',
@@ -240,18 +264,28 @@ export const foundingChapterBrothers: {
   },
   {
     className: 'Psi',
+    greekLetter: 'Ψ',
     brothers: ['Andre Oen', 'Adam Santos'],
   },
   {
     className: 'Omega',
+    greekLetter: 'Ω',
     brothers: [],
   },
   {
     className: 'Alpha Alpha',
-    brothers: [],
+    greekLetter: 'AA',
+    brothers: ['Kayne Heart', 'Jan Carlo Reniva'],
   },
   {
     className: 'Alpha Beta',
-    brothers: [],
+    greekLetter: 'AB',
+    brothers: [
+      'German Ardon Elias',
+      'Tri Huynh',
+      'Tim Kwon',
+      'Alvin Lynn',
+      'Kai Stevens',
+    ],
   },
 ];
