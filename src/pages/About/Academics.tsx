@@ -1,6 +1,6 @@
 export default function Academics() {
   return (
-    <div className="px-8 py-8">
+    <>
       <h1 className="flex justify-center text-2xl mt-4 font-bold md:text-4xl">
         Academics
       </h1>
@@ -18,6 +18,6 @@ export default function Academics() {
         new members with academics. Lambda Psi Rho is academically diverse with
         brothers in nearly every major on campus.s
       </p>
-    </div>
+    </>
   );
 }

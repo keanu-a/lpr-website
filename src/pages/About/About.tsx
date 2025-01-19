@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="px-8 py-8">
+    <>
       <h1 className="flex justify-center text-2xl mt-4 font-bold md:text-4xl">
         About Lambda Psi Rho
       </h1>
@@ -31,6 +31,6 @@ export default function About() {
           <li>Respect for all persons</li>
         </ul>
       </div>
-    </div>
+    </>
   );
 }

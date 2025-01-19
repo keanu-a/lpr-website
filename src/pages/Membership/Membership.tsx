@@ -1,6 +1,6 @@
 export default function Membership() {
   return (
-    <div className="px-8 py-8">
+    <>
       <h1 className="flex justify-center text-2xl mt-4 font-bold md:text-4xl">
         Membership
       </h1>
@@ -13,6 +13,6 @@ export default function Membership() {
         successful continuation as a student in good standing as defined by the
         sheltering institution.
       </p>
-    </div>
+    </>
   );
 }
