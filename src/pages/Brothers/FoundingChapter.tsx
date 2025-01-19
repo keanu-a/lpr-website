@@ -1,4 +1,4 @@
-import { foundingChapterBrothers } from '@/constants/foundingChapter';
+import { foundingChapterBrothers } from '@/data/foundingChapter';
 import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';

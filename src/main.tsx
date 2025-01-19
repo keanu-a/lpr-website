@@ -29,22 +29,26 @@ createRoot(document.getElementById('root')!).render(
         <Route index element={<Home />} />
 
         <Route element={<PageLayout />}>
-          <Route path="about-us" element={<About />} />
-          <Route path="upcoming-events" element={<UpcomingEvents />} />
-          <Route path="academics" element={<Academics />} />
-          <Route path="stepping" element={<Stepping />} />
+          {/* ABOUT TAB */}
+          <Route path="/about-us" element={<About />} />
+          <Route path="/upcoming-events" element={<UpcomingEvents />} />
+          <Route path="/academics" element={<Academics />} />
+          <Route path="/stepping" element={<Stepping />} />
 
-          <Route path="membership" element={<Membership />} />
-          <Route path="expansion" element={<Expansion />} />
-          <Route path="incorporation" element={<Incorporation />} />
+          {/* MEMBERSHIP TAB */}
+          <Route path="/membership" element={<Membership />} />
+          <Route path="/expansion" element={<Expansion />} />
+          <Route path="/incorporation" element={<Incorporation />} />
 
-          <Route path="founding-chapter" element={<FoundingChapter />} />
-          <Route path="active-house" element={<ActiveHouse />} />
-          <Route path="alumni-chapter" element={<AlumniChapter />} />
-          <Route path="national-board" element={<NationalBoard />} />
+          {/* BROTHERS TAB */}
+          <Route path="/founding-chapter" element={<FoundingChapter />} />
+          <Route path="/active-house" element={<ActiveHouse />} />
+          <Route path="/alumni-chapter" element={<AlumniChapter />} />
+          <Route path="/national-board" element={<NationalBoard />} />
 
+          {/* PHILANTHROPY TAB */}
           <Route
-            path="local-philanthropies"
+            path="/local-philanthropies"
             element={<LocalPhilanthropies />}
           />
         </Route>
