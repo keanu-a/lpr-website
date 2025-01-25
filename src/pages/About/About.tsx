@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <>
+    <div className="flex flex-col gap-4">
       <h1 className="flex justify-center text-2xl mt-4 font-bold md:text-4xl">
         About Lambda Psi Rho
       </h1>
@@ -25,12 +25,42 @@ export default function About() {
           Fathers:
         </p>
 
-        <ul className="flex flex-col items-center gap-4 justify-around mt-8 md:flex-row">
-          <li>Leadership in the community</li>
-          <li>Pride in all that we do</li>
-          <li>Respect for all persons</li>
-        </ul>
+        <div>
+          <h3>Leadership</h3>
+          <h2>Leadership in our community</h2>
+          <p>
+            Lambda Psi Rho enables all of its members to have leadership
+            positions and opportunities to build confidence and success. We
+            acquire the skills needed for success in school and in life. Success
+            in both builds confidence for speaking, presenting, and leading in
+            every aspect for your and career.
+          </p>
+        </div>
+
+        <div>
+          <h3>Pride</h3>
+          <h2>Pride in what we do</h2>
+          <p>
+            When one accomplishes a goal, all of us accomplishes it together.
+            Members of the fraternity emphasizes the importance of being bold,
+            daring, and challenging, so that we can be at the highest level of
+            prestige possible. Our vision is to tap into our potential and
+            instill the idea of being humble and rooted to ourselves.
+          </p>
+        </div>
+
+        <div>
+          <h3>Respect</h3>
+          <h2>Respect for all persons</h2>
+          <p>
+            The most important thing to have is respect. Respect is the prime
+            trait of any gentlemen. To earn it is to show it, and Lambda Psi Rho
+            instill this pillar to the highest regard for all of its member.
+            From school to service and into our everyday lives, this pillar will
+            always be exemplified.
+          </p>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
