@@ -12,12 +12,12 @@ export default function Home() {
         <Nav className="relative z-10" />
 
         <div className="absolute top-1/2 transform -translate-y-1/2 inset-0 flex flex-col items-center justify-center h-fit text-white z-10">
-          <h1 className="text-3xl">Each Man a Foundation For</h1>
-          <h1 className="text-9xl text-[#9B0033] uppercase font-bold shadow-lg">
+          <h1 className="text-md md:text-3xl">Each Man a Foundation For</h1>
+          <h1 className="text-5xl md:text-9xl text-[#9B0033] uppercase font-bold shadow-lg">
             Excellence
           </h1>
 
-          <h2 className="text-xl mt-20">
+          <h2 className="text-md mt-20 md:text-xl">
             The University of Nevada, Reno Est. 2006
           </h2>
         </div>

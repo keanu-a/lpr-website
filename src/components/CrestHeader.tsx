@@ -1,15 +1,16 @@
 import { NavLink } from 'react-router';
 import crest from '../assets/crest.png';
+import { cn } from "@/lib/utils";
 
-export default function CrestHeader() {
+export default function CrestHeader({ className }: { className?: string }) {
   return (
-    <NavLink to="/" className="flex items-center text-white">
-      <img className="w-28" src={crest} alt="Lambda Psi Rho Crest" />
+    <NavLink to="/" className={cn("flex items-center", className)}>
+      <img className="w-24 md:w-28" src={crest} alt="Lambda Psi Rho Crest" />
 
       <div>
-        <p className="font-bold uppercase">Lambda Psi Rho</p>
+        <h1 className="text-sm md:text-base font-bold uppercase">Lambda Psi Rho</h1>
         <hr />
-        <p>Fraternity, Inc.</p>
+        <h3 className="text-sm md:text-base">Fraternity, Inc.</h3>
       </div>
     </NavLink>
   );
