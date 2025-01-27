@@ -1,3 +1,5 @@
+import Title from '@/components/Title';
+
 export default function About() {
   return (
     <div className="flex flex-col gap-4">
@@ -14,11 +16,7 @@ export default function About() {
         upholding our pillars of Leadership, Pride, and Respect.
       </p>
 
-      <h2 className="text-xl font-bold flex justify-center mt-8 md:text-2xl">
-        Our Mission
-      </h2>
-
-      <div className="mt-4">
+      <div className="mt-4 flex flex-col gap-6">
         <p>
           To develop brotherhood and individual growth through discipline,
           integrity, and commitment while upholding the ideals of our Founding
@@ -26,8 +24,7 @@ export default function About() {
         </p>
 
         <div>
-          <h3>Leadership</h3>
-          <h2>Leadership in our community</h2>
+          <Title title="Leadership in our community" subtitle="Leadership" />
           <p>
             Lambda Psi Rho enables all of its members to have leadership
             positions and opportunities to build confidence and success. We
@@ -38,8 +35,7 @@ export default function About() {
         </div>
 
         <div>
-          <h3>Pride</h3>
-          <h2>Pride in what we do</h2>
+          <Title title="Pride in what we do" subtitle="Pride" />
           <p>
             When one accomplishes a goal, all of us accomplishes it together.
             Members of the fraternity emphasizes the importance of being bold,
@@ -50,8 +46,7 @@ export default function About() {
         </div>
 
         <div>
-          <h3>Respect</h3>
-          <h2>Respect for all persons</h2>
+          <Title title="Respect for all persons" subtitle="Respect" />
           <p>
             The most important thing to have is respect. Respect is the prime
             trait of any gentlemen. To earn it is to show it, and Lambda Psi Rho

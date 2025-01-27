@@ -1,25 +1,22 @@
+export const foundingFathers = [
+  'Sean Aguon',
+  'Jeffrey Chao',
+  'Charleston Chua',
+  'Christopher Doan',
+  'Andy Ha',
+  'Steven Ly',
+  'Hector Miguel',
+  'Tommy On',
+  'Zephyrene Villaluz',
+  'Michael Wang',
+  'Anthony Yi',
+];
+
 export const foundingChapterBrothers: {
   className: string;
   greekLetter: string;
   brothers: string[];
 }[] = [
-  {
-    className: 'Founding Fathers',
-    greekLetter: '',
-    brothers: [
-      'Sean Aguon',
-      'Jeffrey Chao',
-      'Charleston Chua',
-      'Christopher Doan',
-      'Andy Ha',
-      'Steven Ly',
-      'Hector Miguel',
-      'Tommy On',
-      'Zephyrene Villaluz',
-      'Michael Wang',
-      'Anthony Yi',
-    ],
-  },
   {
     className: 'Alpha',
     greekLetter: 'A',

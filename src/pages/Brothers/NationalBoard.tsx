@@ -1,3 +1,4 @@
+import Title from '@/components/Title';
 import { term, nationalBoard } from '@/data/nationalBoard';
 
 export default function NationalBoard() {
@@ -12,13 +13,11 @@ export default function NationalBoard() {
       <div className="flex flex-col gap-4">
         {nationalBoard.map((data, nationalBoardIndex) => (
           <div key={nationalBoardIndex}>
-            <h4>{data.position}</h4>
-            <h3>{data.name}</h3>
+            <Title title={data.name} subtitle={data.position} />
 
-            <h5>{data.email}</h5>
+            <h5>Email: {data.email}</h5>
             <p>
-              {data.class} class: Graduated {data.graduation} with a{' '}
-              {data.degree}
+              {data.class} class: Graduated {data.graduation} - {data.degree}
             </p>
 
             <p>{data.bio}</p>
