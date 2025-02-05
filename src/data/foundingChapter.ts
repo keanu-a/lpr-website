@@ -1,3 +1,6 @@
+import xiClass from '@/assets/foundingChapter/xi-class.jpg';
+import sigmaClass from '@/assets/foundingChapter/sigma-class.jpg';
+
 export const foundingFathers = [
   'Sean Aguon',
   'Jeffrey Chao',
@@ -16,6 +19,7 @@ export const foundingChapterBrothers: {
   className: string;
   greekLetter: string;
   brothers: string[];
+  photo?: string;
 }[] = [
   {
     className: 'Alpha',
@@ -178,6 +182,7 @@ export const foundingChapterBrothers: {
     className: 'Xi',
     greekLetter: 'Ξ',
     brothers: ['Juan Carlos Comahig', 'Allister Magalued', 'Ivan Samuel'],
+    photo: xiClass,
   },
   {
     className: 'Omicron',
@@ -216,6 +221,7 @@ export const foundingChapterBrothers: {
       'Kenneth Saronghilo',
       'Marcus Son',
     ],
+    photo: sigmaClass,
   },
   {
     className: 'Tau',

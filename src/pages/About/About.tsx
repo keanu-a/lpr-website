@@ -35,7 +35,7 @@ export default function About() {
         </div>
 
         <div>
-          <Title title="Pride in what we do" subtitle="Pride" />
+          <Title title="Pride in all that we do" subtitle="Pride" />
           <p>
             When one accomplishes a goal, all of us accomplishes it together.
             Members of the fraternity emphasizes the importance of being bold,

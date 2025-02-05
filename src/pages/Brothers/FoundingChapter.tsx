@@ -42,7 +42,14 @@ export default function FoundingChapter() {
                 index % 2 === 0 && 'md:flex-row-reverse'
               }`}
             >
-              <div className="w-96 h-72 bg-black" />
+              {data.photo ? (
+                <img
+                  src={data.photo}
+                  className="w-full rounded-md shadow-xl md:w-1/2"
+                />
+              ) : (
+                <div className="w-96 h-72 bg-black" />
+              )}
               <div className="flex flex-col gap-2 p-2">
                 <Title title={data.className} subtitle={data.greekLetter} />
                 <ul className="flex flex-wrap justify-center gap-4 md:flex-col">
