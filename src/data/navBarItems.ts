@@ -1,7 +1,6 @@
-export const navBarItems: {
-  title: string;
-  links: { name: string; href: string }[];
-}[] = [
+import { NavItem } from '@/types/nav';
+
+export const navBarItems: NavItem[] = [
   {
     title: 'About',
     links: [
