@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="flex w-2/3 align-top justify-between">
           {navBarItems.map((item, itemIdx) => (
             <div key={itemIdx} className="flex flex-col gap-4">
-              <h1 className="text-xl font-bold">{item.title}</h1>
+              <h1 className="text-xl font-bold text-maroon">{item.title}</h1>
               <ul className="flex flex-col gap-1">
                 {item.links.map((link, linkIdx) => (
                   <li key={linkIdx}>
