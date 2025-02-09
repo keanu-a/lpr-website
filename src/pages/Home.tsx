@@ -1,7 +1,11 @@
+import { useEffect } from "react";
+import { InstagramEmbed } from "react-social-media-embed";
+
 import Nav from "../components/Nav";
 import heroBg from "../assets/active-house.jpg";
 import Footer from "@/components/Footer";
-import { useEffect } from "react";
+import { Link } from "react-router";
+import Title from "@/components/Title";
 
 export default function Home() {
   useEffect(() => {
@@ -28,6 +32,35 @@ export default function Home() {
           </h2>
         </div>
       </div>
+
+      <div className="my-8 flex gap-4 justify-center items-center">
+        <InstagramEmbed
+          url="https://www.instagram.com/lambdapsirho/"
+          className="max-w-96"
+        />
+
+        <div className="flex flex-col gap-4">
+          <Title title="Keep up with us" subtitle="Social Media" />
+
+          <div className="flex gap-2">
+            <Link
+              to="https://www.youtube.com/user/lambdapsirho"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Youtube
+            </Link>
+            <Link
+              to="https://www.instagram.com/lambdapsirho/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </>
   );
