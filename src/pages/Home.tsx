@@ -1,5 +1,6 @@
 import Nav from "../components/Nav";
 import heroBg from "../assets/active-house.jpg";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           </h2>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
