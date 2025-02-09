@@ -9,11 +9,11 @@ import { Link } from "react-router";
 export default function Footer() {
   return (
     <footer className="relative h-96 bg-red-900 bg-opacity-5">
-      {/* Background Image with Opacity */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 z-[-1]"
         style={{ backgroundImage: `url(${dots})` }}
       />
+
       <MaxWidthContainer className="h-full items-center justify-between flex flex-col md:flex-row">
         <CrestHeader />
 
