@@ -1,7 +1,7 @@
 export default function Membership() {
   return (
     <>
-      <h1 className="flex justify-center text-2xl mt-4 font-bold md:text-4xl">
+      <h1 className="flex justify-center text-2xl font-bold md:text-4xl">
         Membership
       </h1>
 

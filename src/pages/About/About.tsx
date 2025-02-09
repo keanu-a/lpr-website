@@ -1,9 +1,9 @@
-import Title from '@/components/Title';
+import Title from "@/components/Title";
 
 export default function About() {
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="flex justify-center text-2xl mt-4 font-bold md:text-4xl">
+      <h1 className="flex justify-center text-2xl font-bold md:text-4xl">
         About Lambda Psi Rho
       </h1>
 

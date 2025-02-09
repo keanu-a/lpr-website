@@ -14,7 +14,7 @@ export default function PageLayout() {
   return (
     <div>
       <Nav className="bg-black" />
-      <MaxWidthContainer className="min-h-screen">
+      <MaxWidthContainer className="min-h-screen my-4">
         <Outlet />
       </MaxWidthContainer>
       <Footer />
