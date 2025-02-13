@@ -17,7 +17,7 @@ import AlumniChapter from '@/pages/Brothers/AlumniChapter.tsx';
 import NationalBoard from '@/pages/Brothers/NationalBoard.tsx';
 
 import LocalPhilanthropies from '@/pages/Philanthropy/LocalPhilanthropies.tsx';
-import UpcomingEvents from '@/pages/About/UpcomingEvents.tsx';
+// import UpcomingEvents from '@/pages/About/UpcomingEvents.tsx';
 
 export default function App() {
   return (
@@ -28,7 +28,7 @@ export default function App() {
         <Route element={<PageLayout />}>
           {/* ABOUT TAB */}
           <Route path="/about-us" element={<About />} />
-          <Route path="/upcoming-events" element={<UpcomingEvents />} />
+          {/* <Route path="/upcoming-events" element={<UpcomingEvents />} /> */}
           <Route path="/academics" element={<Academics />} />
           <Route path="/stepping" element={<Stepping />} />
 

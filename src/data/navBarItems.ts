@@ -8,10 +8,10 @@ export const navBarItems: NavItem[] = [
         name: 'About us',
         href: '/about-us',
       },
-      {
-        name: 'Upcoming Events',
-        href: '/upcoming-events',
-      },
+      // {
+      //   name: 'Upcoming Events',
+      //   href: '/upcoming-events',
+      // },
       {
         name: 'Stepping',
         href: '/stepping',
