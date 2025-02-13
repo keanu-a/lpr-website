@@ -1,5 +1,6 @@
 import xiClass from '@/assets/foundingChapter/xi-class.jpg';
 import sigmaClass from '@/assets/foundingChapter/sigma-class.jpg';
+import phiClass from '@/assets/foundingChapter/phi-class.jpg';
 
 export const foundingFathers = [
   'Sean Aguon',
@@ -252,6 +253,7 @@ export const foundingChapterBrothers: {
       'Larsen So',
       'Shangqi Xue',
     ],
+    photo: phiClass,
   },
   {
     className: 'Chi',
@@ -278,17 +280,11 @@ export const foundingChapterBrothers: {
   {
     className: 'Alpha Alpha',
     greekLetter: 'AA',
-    brothers: ['Kayne Heart', 'Jan Carlo Reniva'],
+    brothers: ['Kayne Hart', 'Jan Carlo Reniva'],
   },
   {
     className: 'Alpha Beta',
     greekLetter: 'AB',
-    brothers: [
-      'German Ardon Elias',
-      'Tri Huynh',
-      'Tim Kwon',
-      'Alvin Lynn',
-      'Kai Stevens',
-    ],
+    brothers: ['German Ardon Elias', 'Tri Huynh', 'Alvin Lynn', 'Kai Stevens'],
   },
 ];
