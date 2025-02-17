@@ -1,10 +1,11 @@
 import { useEffect } from "react";
+import { Link } from "react-router";
+import { Youtube, Instagram } from "lucide-react";
 import { InstagramEmbed } from "react-social-media-embed";
 
 import Nav from "../components/Nav";
 import heroBg from "../assets/active-house.jpg";
 import Footer from "@/components/Footer";
-import { Link } from "react-router";
 import Title from "@/components/Title";
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="my-8 flex gap-4 justify-center items-center">
+      <div className="my-8 flex flex-col gap-4 justify-center items-center md:flex-row">
         <InstagramEmbed
           url="https://www.instagram.com/lambdapsirho/"
           className="max-w-96"
@@ -42,20 +43,22 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <Title title="Keep up with us" subtitle="Social Media" />
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <Link
               to="https://www.youtube.com/user/lambdapsirho"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-maroon transition-all"
             >
-              Youtube
+              <Youtube size={30} />
             </Link>
             <Link
               to="https://www.instagram.com/lambdapsirho/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-maroon transition-all"
             >
-              Instagram
+              <Instagram />
             </Link>
           </div>
         </div>

@@ -1,10 +1,10 @@
-import { Link } from 'react-router';
+import { Link } from "react-router";
 
-import nnccffLogo from '@/assets/nnccf-logo.jpg';
-import nnccfDonation2019 from '@/assets/nnccf-donation-2019.jpg';
-import hoops4Hope2018 from '@/assets/hoops-4-hope.jpg';
+import nnccffLogo from "@/assets/philanthropy/nnccf-logo.jpg";
+import nnccfDonation2019 from "@/assets/philanthropy/nnccf-donation-2019.jpg";
+import hoops4Hope2018 from "@/assets/philanthropy/hoops-4-hope.jpg";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 
 export default function LocalPhilanthropies() {
   return (
