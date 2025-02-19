@@ -1,12 +1,12 @@
-import { useEffect } from "react";
-import { Link } from "react-router";
-import { Youtube, Instagram } from "lucide-react";
-import { InstagramEmbed } from "react-social-media-embed";
+import { useEffect } from 'react';
+import { Link } from 'react-router';
+import { Youtube, Instagram } from 'lucide-react';
+import { InstagramEmbed } from 'react-social-media-embed';
 
-import Nav from "../components/Nav";
-import heroBg from "../assets/active-house.jpg";
-import Footer from "@/components/Footer";
-import Title from "@/components/Title";
+import Nav from '../components/Nav';
+import heroBg from '../assets/active-house.jpg';
+import Footer from '@/components/Footer';
+import Title from '@/components/Title';
 
 export default function Home() {
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="absolute top-1/2 transform -translate-y-1/2 inset-0 flex flex-col items-center justify-center h-fit text-white z-5">
           <h1 className="text-md md:text-3xl">Each Man a Foundation For</h1>
-          <h1 className="text-5xl sm:text-7xl md:text-9xl text-maroon uppercase font-bold shadow-lg">
+          <h1 className="text-6xl sm:text-7xl md:text-9xl text-maroon uppercase font-bold shadow-lg">
             Excellence
           </h1>
 

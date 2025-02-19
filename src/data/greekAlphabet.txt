@@ -1,0 +1,26 @@
+Use this document to copy greek letters to text
+
+A
+B
+Γ
+Δ
+Ε
+Ζ
+Η
+Θ
+I
+K
+Λ
+Μ
+N
+Ξ
+Ο
+Π
+Ρ
+Σ
+Τ
+Y
+Φ
+Χ
+Ψ
+Ω

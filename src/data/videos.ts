@@ -1,15 +1,15 @@
 export const steppingPageVideos: { title: string; src: string }[] = [
   {
+    title: '2018 MGC Yardshow (Spring)',
+    src: 'https://www.youtube.com/embed/nHAb_zU522w',
+  },
+  {
     title: '2018 MGC Yardshow (Fall)',
-    src: 'https://www.youtube.com/embed/Ox1xyZEDMPc?autoplay=1',
+    src: 'https://www.youtube.com/embed/Ox1xyZEDMPc',
   },
   {
     title: 'Sigma Class Presentation (Fall 2019)',
     src: 'https://www.youtube.com/embed/mR4v6rWMZzU',
-  },
-  {
-    title: '2018 MGC Yardshow (Spring)',
-    src: 'https://www.youtube.com/embed/nHAb_zU522w',
   },
   {
     title: '2017 Fall New Member Presentation',
