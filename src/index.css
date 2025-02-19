@@ -82,5 +82,5 @@
 
 .animate-scroll {
   display: flex;
-  animation: scroll 50s linear infinite;
+  animation: scroll 120s linear infinite;
 }
