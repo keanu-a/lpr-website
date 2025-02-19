@@ -8,11 +8,16 @@ export default function NationalBoard() {
 
       <h2 className="text-xl">{term}</h2>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6">
         {nationalBoard.map((data, nationalBoardIndex) => (
-          <div key={nationalBoardIndex}>
+          <div
+            key={nationalBoardIndex}
+            className={`text-center ${
+              nationalBoardIndex % 2 === 0 ? 'md:text-left' : 'md:text-right'
+            }`}
+          >
             <Title title={data.name} subtitle={data.position} />
-            <h4 className="font-bold">{data.class} Class</h4>
+            <h4 className="font-bold text-sm">{data.class} Class</h4>
 
             <h5>Email: {data.email}</h5>
             <p>
