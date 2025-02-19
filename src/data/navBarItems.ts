@@ -50,10 +50,10 @@ export const navBarItems: NavItem[] = [
         name: 'Active House',
         href: '/active-house',
       },
-      {
-        name: 'Alumni Chapter',
-        href: '/alumni-chapter',
-      },
+      // {
+      //   name: 'Alumni Chapter',
+      //   href: '/alumni-chapter',
+      // },
       {
         name: 'National Board',
         href: '/national-board',

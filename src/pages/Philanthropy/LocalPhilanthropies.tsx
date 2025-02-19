@@ -1,10 +1,9 @@
-import { Link } from "react-router";
+import { Link } from 'react-router';
 
-import nnccffLogo from "@/assets/philanthropy/nnccf-logo.jpg";
-import nnccfDonation2019 from "@/assets/philanthropy/nnccf-donation-2019.jpg";
-import hoops4Hope2018 from "@/assets/philanthropy/hoops-4-hope.jpg";
+import nnccffLogo from '@/assets/philanthropy/nnccf-logo.jpg';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
+import ScrollingGallery from '@/components/ScrollingGallery';
 
 export default function LocalPhilanthropies() {
   return (
@@ -43,18 +42,7 @@ export default function LocalPhilanthropies() {
         innocence and imagination.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-        <img
-          src={nnccfDonation2019}
-          alt="Lambda Psi Rho donating to the NNCCF with a big check"
-          className="object-cover rounded-lg aspect-[4/3]"
-        />
-        <img
-          src={hoops4Hope2018}
-          alt="Poster for Hoops 4 Hope philanthropy event"
-          className="object-cover rounded-lg aspect-[4/3]"
-        />
-      </div>
+      <ScrollingGallery />
 
       <p>
         Hoops for Hope is our largest philanthropy of the year. Hosted in the
