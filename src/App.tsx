@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router';
 
-function App() {
-  const [count, setCount] = useState(0)
+import PageLayout from '@/layouts/PageLayout.tsx';
+import Home from '@/pages/Home.tsx';
 
+import About from '@/pages/About/About.tsx';
+import Academics from '@/pages/About/Academics.tsx';
+import Stepping from '@/pages/About/Stepping.tsx';
+
+import Membership from '@/pages/Membership/Membership.tsx';
+import Expansion from '@/pages/Membership/Expansion.tsx';
+import Incorporation from '@/pages/Membership/Incorporation.tsx';
+
+import FoundingChapter from '@/pages/Brothers/FoundingChapter.tsx';
+import ActiveHouse from '@/pages/Brothers/ActiveHouse.tsx';
+import AlumniChapter from '@/pages/Brothers/AlumniChapter.tsx';
+import NationalBoard from '@/pages/Brothers/NationalBoard.tsx';
+
+import LocalPhilanthropies from '@/pages/Philanthropy/LocalPhilanthropies.tsx';
+// import UpcomingEvents from '@/pages/About/UpcomingEvents.tsx';
+
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
 
-export default App
+        <Route element={<PageLayout />}>
+          {/* ABOUT TAB */}
+          <Route path="/about-us" element={<About />} />
+          {/* <Route path="/upcoming-events" element={<UpcomingEvents />} /> */}
+          <Route path="/academics" element={<Academics />} />
+          <Route path="/stepping" element={<Stepping />} />
+
+          {/* MEMBERSHIP TAB */}
+          <Route path="/membership" element={<Membership />} />
+          <Route path="/expansion" element={<Expansion />} />
+          <Route path="/incorporation" element={<Incorporation />} />
+
+          {/* BROTHERS TAB */}
+          <Route path="/founding-chapter" element={<FoundingChapter />} />
+          <Route path="/active-house" element={<ActiveHouse />} />
+          <Route path="/alumni-chapter" element={<AlumniChapter />} />
+          <Route path="/national-board" element={<NationalBoard />} />
+
+          {/* PHILANTHROPY TAB */}
+          <Route
+            path="/local-philanthropies"
+            element={<LocalPhilanthropies />}
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
