@@ -1,14 +1,19 @@
-export const activeHouse: { brotherName: string; class: string }[] = [
-  { brotherName: 'German Ardon Elias', class: 'AB' },
-  { brotherName: 'Jordan Cadelina', class: 'Χ' },
-  { brotherName: 'Jeremy Co', class: 'Φ' },
-  { brotherName: 'Dylan Dang', class: 'Φ' },
-  { brotherName: 'Cole Gilliam', class: 'Χ' },
-  { brotherName: 'Tri Huynh', class: 'AB' },
-  { brotherName: 'Gavin Ide', class: 'Φ' },
-  { brotherName: 'Alven Lin', class: 'AB' },
-  { brotherName: 'Andre Oen', class: 'Ψ' },
-  { brotherName: 'Jan Carlo Reniva', class: 'AA' },
-  { brotherName: 'Adam Santos', class: 'Ψ' },
-  { brotherName: 'Mateo Sciscento', class: 'Χ' },
+export interface ActiveHouse {
+  brotherName: string;
+  className: string;
+}
+
+export const activeHouse: ActiveHouse[] = [
+  { brotherName: 'German Ardon Elias', className: 'AB' },
+  { brotherName: 'Jordan Cadelina', className: 'Χ' },
+  { brotherName: 'Jeremy Co', className: 'Φ' },
+  { brotherName: 'Dylan Dang', className: 'Φ' },
+  { brotherName: 'Cole Gilliam', className: 'Χ' },
+  { brotherName: 'Tri Huynh', className: 'AB' },
+  { brotherName: 'Gavin Ide', className: 'Φ' },
+  { brotherName: 'Alven Lin', className: 'AB' },
+  { brotherName: 'Andre Oen', className: 'Ψ' },
+  { brotherName: 'Jan Carlo Reniva', className: 'AA' },
+  { brotherName: 'Adam Santos', className: 'Ψ' },
+  { brotherName: 'Mateo Sciscento', className: 'Χ' },
 ];

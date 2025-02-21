@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import Title from '@/components/Title';
+import ImagePlaceholder from '@/components/ImagePlaceholder';
 
 export default function FoundingChapter() {
   return (
@@ -20,7 +21,7 @@ export default function FoundingChapter() {
       <div className="flex flex-col gap-4">
         <Title title="11 Distinguished Gentlemen" subtitle="Founding Fathers" />
 
-        <div className="w-full h-96 bg-black" />
+        <ImagePlaceholder className="h-96 w-full" />
 
         <ul className="flex flex-wrap justify-center gap-x-6 gap-y-3">
           {foundingFathers.map((name, fatherIndex) => (
@@ -48,7 +49,7 @@ export default function FoundingChapter() {
                   className="w-full rounded-md shadow-xl md:w-1/2"
                 />
               ) : (
-                <div className="w-96 h-72 bg-black" />
+                <ImagePlaceholder className="w-96 h-72" />
               )}
               <div className="flex flex-col gap-2 p-2">
                 <Title title={data.className} subtitle={data.greekLetter} />

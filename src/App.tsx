@@ -12,8 +12,8 @@ import Expansion from '@/pages/Membership/Expansion.tsx';
 import Incorporation from '@/pages/Membership/Incorporation.tsx';
 
 import FoundingChapter from '@/pages/Brothers/FoundingChapter.tsx';
-import ActiveHouse from '@/pages/Brothers/ActiveHouse.tsx';
-import AlumniChapter from '@/pages/Brothers/AlumniChapter.tsx';
+import ActiveHousePage from '@/pages/Brothers/ActiveHousePage';
+import AlumniChapterPage from '@/pages/Brothers/AlumniChapterPage';
 import NationalBoard from '@/pages/Brothers/NationalBoard.tsx';
 
 import LocalPhilanthropies from '@/pages/Philanthropy/LocalPhilanthropies.tsx';
@@ -39,8 +39,8 @@ export default function App() {
 
           {/* BROTHERS TAB */}
           <Route path="/founding-chapter" element={<FoundingChapter />} />
-          <Route path="/active-house" element={<ActiveHouse />} />
-          <Route path="/alumni-chapter" element={<AlumniChapter />} />
+          <Route path="/active-house" element={<ActiveHousePage />} />
+          <Route path="/alumni-chapter" element={<AlumniChapterPage />} />
           <Route path="/national-board" element={<NationalBoard />} />
 
           {/* PHILANTHROPY TAB */}
