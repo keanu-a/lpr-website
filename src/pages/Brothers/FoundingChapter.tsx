@@ -13,7 +13,7 @@ import ImagePlaceholder from '@/components/ImagePlaceholder';
 
 export default function FoundingChapter() {
   return (
-    <div className="flex flex-col gap-4 max-w-4xl mx-auto">
+    <div className="flex flex-col gap-4 max-w-6xl mx-auto">
       <h1 className="flex justify-center text-2xl my-4 font-bold md:text-4xl">
         Founding Chapter
       </h1>
@@ -46,7 +46,7 @@ export default function FoundingChapter() {
               {data.photo ? (
                 <img
                   src={data.photo}
-                  className="w-full rounded-md shadow-xl md:w-1/2"
+                  className="w-full rounded-md shadow-xl h-[25rem] object-cover md:w-1/2"
                 />
               ) : (
                 <ImagePlaceholder className="w-96 h-72" />
