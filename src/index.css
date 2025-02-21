@@ -84,3 +84,23 @@
   display: flex;
   animation: scroll 120s linear infinite;
 }
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust width */
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Dark background */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Scrollbar color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Hover effect */
+}

@@ -37,7 +37,7 @@ export default function Home() {
       <div className="my-8 flex flex-col gap-4 justify-center items-center md:flex-row">
         <InstagramEmbed
           url="https://www.instagram.com/lambdapsirho/"
-          className="max-w-96"
+          className="max-[w-96]"
         />
 
         <div className="flex flex-col gap-4">
