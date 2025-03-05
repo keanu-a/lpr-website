@@ -1,10 +1,10 @@
-import CrestHeader from "./CrestHeader";
-import MaxWidthContainer from "./MaxWidthContainer";
+import CrestHeader from './CrestHeader';
+import MaxWidthContainer from './MaxWidthContainer';
 
-import { navBarItems } from "@/data/navBarItems";
+import { navBarItems } from '@/data/navBarItems';
 
-import dots from "@/assets/dots.jpg";
-import { Link } from "react-router";
+import dots from '@/assets/dots.jpg';
+import { Link } from 'react-router';
 
 export default function Footer() {
   return (
@@ -36,7 +36,7 @@ export default function Footer() {
       </MaxWidthContainer>
 
       <p className="bg-black text-white text-sm flex justify-center py-1">
-        © Lambda Psi Rho Fraernity, Inc.
+        © Lambda Psi Rho Fraternity, Inc.
       </p>
     </footer>
   );
