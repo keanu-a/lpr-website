@@ -5,7 +5,7 @@ const VIDEO_HEIGHT = 360;
 
 export default function Stepping() {
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-12">
       <h1 className="text-2xl font-bold md:text-4xl">Stepping</h1>
 
       <div className="flex flex-col gap-4">
@@ -17,6 +17,7 @@ export default function Stepping() {
             width={VIDEO_WIDTH}
             height={VIDEO_HEIGHT}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            className="w-screen sm:w-[38rem]"
           ></iframe>
         ))}
       </div>

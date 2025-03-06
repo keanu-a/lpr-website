@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="absolute top-1/2 transform -translate-y-1/2 inset-0 flex flex-col items-center justify-center h-fit text-white z-5">
           <h1 className="text-md md:text-3xl">Each Man a Foundation For</h1>
-          <h1 className="text-6xl sm:text-7xl md:text-9xl text-maroon uppercase font-bold shadow-lg">
+          <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] text-maroon uppercase font-bold shadow-lg">
             Excellence
           </h1>
 
