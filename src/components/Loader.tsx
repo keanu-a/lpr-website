@@ -13,7 +13,7 @@ export default function Loader() {
         transition={{ duration: 1.5 }}
       />
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col">
         <motion.h1
           className="text-xl font-bold uppercase"
           initial={{ opacity: 0, translateY: '-50%' }}

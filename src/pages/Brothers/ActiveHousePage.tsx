@@ -1,4 +1,3 @@
-import Title from '@/components/Title';
 import { activeHouse, ActiveHouse } from '@/data/activeHouse';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 
@@ -9,16 +8,15 @@ export default function ActiveHousePage() {
         Active House
       </h1>
 
-      <ImagePlaceholder className="w-full h-96 " />
+      <ImagePlaceholder className="w-full h-[26rem] " />
 
       <ul className="flex gap-5 flex-wrap justify-center md:gap-10">
-        {activeHouse.map(
-          ({ brotherName, className }: ActiveHouse, activeHouseIdx) => (
-            <li key={activeHouseIdx} className="relative group cursor-pointer">
-              <Title title={brotherName} subtitle={className} />
-            </li>
-          )
-        )}
+        {activeHouse.map(({ brotherName, className }: ActiveHouse, index) => (
+          <li key={index} className="">
+            <span className="font-bold text-maroon">{className}</span>
+            <p className="md:text-lg">{brotherName}</p>
+          </li>
+        ))}
       </ul>
     </div>
   );

@@ -42,17 +42,17 @@ export default function Membership() {
         Membership
       </h1>
 
-      <div className="mt-4 flex flex-col gap-4">
+      <div className="mt-4 flex flex-col gap-12">
         <div className="text-maroon font-semibold">
           Collegiate membership may be conferred upon any man who is a student
           of the sheltering institution, regardless of:
         </div>
 
-        <ul className="flex flex-col gap-2">
+        <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
           {MEMBERSHIP_BULLETPOINTS.map((data, bulletIdx) => (
             <li key={bulletIdx} className="flex items-center gap-2">
               <data.Icon size={ICON_SIZE} />
-              <p className="font-bold">{data.text}</p>
+              <p>{data.text}</p>
             </li>
           ))}
         </ul>
