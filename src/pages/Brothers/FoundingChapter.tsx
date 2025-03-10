@@ -25,7 +25,9 @@ export default function FoundingChapter() {
 
         <ul className="flex flex-wrap justify-center gap-x-6 gap-y-3">
           {foundingFathers.map((name, fatherIndex) => (
-            <li key={fatherIndex}>{name}</li>
+            <li className="md:text-lg" key={fatherIndex}>
+              {name}
+            </li>
           ))}
         </ul>
       </div>
@@ -33,8 +35,8 @@ export default function FoundingChapter() {
       <Accordion type="single" collapsible>
         {foundingChapterBrothers.map((data, index) => (
           <AccordionItem value={`item-${index}`} key={index}>
-            <AccordionTrigger>
-              <p>
+            <AccordionTrigger className="hover:no-underline hover:text-maroon transition-all duration-300">
+              <p className="uppercase sm:text-lg">
                 {data.greekLetter} - {data.className}
               </p>
             </AccordionTrigger>
@@ -47,6 +49,7 @@ export default function FoundingChapter() {
                 <img
                   src={data.photo}
                   className="w-full rounded-md shadow-xl h-[25rem] object-cover md:w-1/2"
+                  loading="lazy"
                 />
               ) : (
                 <ImagePlaceholder className="w-96 h-72" />
@@ -55,7 +58,9 @@ export default function FoundingChapter() {
                 <Title title={data.className} subtitle={data.greekLetter} />
                 <ul className="flex flex-wrap justify-center gap-4 md:flex-col">
                   {data.brothers.map((name, brotherIndex) => (
-                    <li key={brotherIndex}>{name}</li>
+                    <li className="md:text-base" key={brotherIndex}>
+                      {name}
+                    </li>
                   ))}
                 </ul>
               </div>

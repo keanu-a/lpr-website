@@ -20,6 +20,7 @@ export default function NationalBoard() {
             <img
               src={data.photo}
               className="h-96 object-cover rounded-lg shadow-lg"
+              loading="lazy"
             />
 
             <div className="flex flex-col gap-4">
