@@ -21,6 +21,7 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Home page always loads at the top
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -55,14 +56,37 @@ export default function Home() {
             <Nav className="relative z-15" />
 
             <div className="absolute top-1/2 transform -translate-y-1/2 inset-0 flex flex-col items-center justify-center h-fit text-white z-5">
-              <h1 className="text-md md:text-3xl">Each Man a Foundation For</h1>
-              <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] text-maroon uppercase font-bold shadow-lg">
-                Excellence
-              </h1>
+              <div className="overflow-hidden">
+                <motion.h1
+                  initial={{ y: '100%' }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  className="text-md md:text-3xl"
+                >
+                  Each Man a Foundation For
+                </motion.h1>
+              </div>
+              <div className="overflow-hidden">
+                <motion.h1
+                  initial={{ y: '100%' }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 1.5, delay: 0.7 }}
+                  className="text-6xl sm:text-8xl md:text-9xl lg:text-[9rem] text-maroon uppercase font-bold"
+                >
+                  Excellence
+                </motion.h1>
+              </div>
 
-              <h2 className="mt-20 md:text-xl">
-                The University of Nevada, Reno Est. 2006
-              </h2>
+              <div className="overflow-hidden">
+                <motion.h2
+                  initial={{ y: '100%' }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 1, delay: 0.9 }}
+                  className="mt-20 md:text-xl"
+                >
+                  The University of Nevada, Reno Est. 2006
+                </motion.h2>
+              </div>
             </div>
           </div>
 
