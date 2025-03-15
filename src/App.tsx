@@ -27,25 +27,25 @@ export default function App() {
 
         <Route element={<PageLayout />}>
           {/* ABOUT TAB */}
-          <Route path="/about-us" element={<About />} />
-          {/* <Route path="/upcoming-events" element={<UpcomingEvents />} /> */}
-          <Route path="/academics" element={<Academics />} />
-          <Route path="/stepping" element={<Stepping />} />
+          <Route path="about-us" element={<About />} />
+          {/* <Route path="upcoming-events" element={<UpcomingEvents />} /> */}
+          <Route path="academics" element={<Academics />} />
+          <Route path="stepping" element={<Stepping />} />
 
           {/* MEMBERSHIP TAB */}
-          <Route path="/membership" element={<Membership />} />
-          <Route path="/expansion" element={<Expansion />} />
-          <Route path="/incorporation" element={<Incorporation />} />
+          <Route path="membership" element={<Membership />} />
+          <Route path="expansion" element={<Expansion />} />
+          <Route path="incorporation" element={<Incorporation />} />
 
           {/* BROTHERS TAB */}
-          <Route path="/founding-chapter" element={<FoundingChapter />} />
-          <Route path="/active-house" element={<ActiveHousePage />} />
-          <Route path="/alumni-chapter" element={<AlumniChapterPage />} />
-          <Route path="/national-board" element={<NationalBoard />} />
+          <Route path="founding-chapter" element={<FoundingChapter />} />
+          <Route path="active-house" element={<ActiveHousePage />} />
+          <Route path="alumni-chapter" element={<AlumniChapterPage />} />
+          <Route path="national-board" element={<NationalBoard />} />
 
           {/* PHILANTHROPY TAB */}
           <Route
-            path="/local-philanthropies"
+            path="local-philanthropies"
             element={<LocalPhilanthropies />}
           />
         </Route>

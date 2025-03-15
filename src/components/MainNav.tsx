@@ -16,7 +16,7 @@ export default function MainNav({ navBarItems }: { navBarItems: NavItem[] }) {
         <NavigationMenuList>
           {navBarItems.map(({ title, links }, navBarItemsIndex) => (
             <NavigationMenuItem key={navBarItemsIndex}>
-              <NavigationMenuTrigger className="uppercase bg-transparent text-white">
+              <NavigationMenuTrigger className="uppercase bg-transparent text-white text-sm lg:text-base">
                 {title}
               </NavigationMenuTrigger>
 
