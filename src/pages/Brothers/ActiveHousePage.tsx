@@ -1,5 +1,5 @@
 import { activeHouse, ActiveHouse } from '@/data/activeHouse';
-import ImagePlaceholder from '@/components/ImagePlaceholder';
+import activeHousePhoto from '@/assets/active-house-sp-2025.jpg';
 
 export default function ActiveHousePage() {
   return (
@@ -8,7 +8,7 @@ export default function ActiveHousePage() {
         Active House
       </h1>
 
-      <ImagePlaceholder className="w-full h-[26rem] " />
+      <img src={activeHousePhoto} className="w-full rounded-lg shadow-lg" />
 
       <ul className="flex gap-5 flex-wrap justify-center md:gap-10">
         {activeHouse.map(({ brotherName, className }: ActiveHouse, index) => (
