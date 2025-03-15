@@ -48,7 +48,7 @@ export default function FoundingChapter() {
               {data.photo ? (
                 <img
                   src={data.photo}
-                  className="w-fit rounded-md shadow-xl h-fit object-fill md:object-cover md:h-[28rem] md:w-1/2"
+                  className="w-fit rounded-md shadow-xl h-[16rem] object-cover md:h-[26rem] md:w-1/2"
                   loading="lazy"
                 />
               ) : (
