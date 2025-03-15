@@ -17,3 +17,32 @@ export const activeHouse: ActiveHouse[] = [
   { brotherName: 'Adam Santos', className: 'Ψ' },
   { brotherName: 'Mateo Sciscento', className: 'Χ' },
 ];
+
+export interface ExecutiveBoard {
+  brotherName: string;
+  role: string;
+}
+
+export const eboard: ExecutiveBoard[] = [
+  { brotherName: 'Gavin Ide', role: 'President' },
+  {
+    brotherName: 'Dylan Dang',
+    role: 'Vice President',
+  },
+  {
+    brotherName: 'Mateo Sciscento',
+    role: 'Vice President of Membership',
+  },
+  {
+    brotherName: 'Jordan Cadelina',
+    role: 'Vice President of Development',
+  },
+  {
+    brotherName: 'Jeremy Co',
+    role: 'Vice President of Marketing',
+  },
+  {
+    brotherName: 'Andre Oen',
+    role: 'Vice President of Finance',
+  },
+];
