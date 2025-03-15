@@ -25,3 +25,9 @@ They must be in this format, copy and paste:
 1. Go to the `pages` folder
 2. Each folder within the `pages` folder matches to the nav bar tabs
 3. Once youre on the correct page, edit or add whatever you need
+
+## Adding Pictures
+
+**NOTE:** Pictures need to be either **.jpg** or **.png**
+1. Go to **src > assets**
+2. Place picture in respective folder
