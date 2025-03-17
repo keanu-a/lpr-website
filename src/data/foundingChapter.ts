@@ -25,6 +25,11 @@ export const foundingChapterBrothers: {
   photo?: string;
 }[] = [
   {
+    className: 'Omega',
+    greekLetter: 'Ω',
+    brothers: ['Θ: RB Rom', 'A: Andrew Lau'],
+  },
+  {
     className: 'Alpha',
     greekLetter: 'A',
     brothers: [
@@ -274,11 +279,6 @@ export const foundingChapterBrothers: {
     className: 'Psi',
     greekLetter: 'Ψ',
     brothers: ['Andre Oen', 'Adam Santos'],
-  },
-  {
-    className: 'Omega',
-    greekLetter: 'Ω',
-    brothers: [],
   },
   {
     className: 'Alpha Alpha',
