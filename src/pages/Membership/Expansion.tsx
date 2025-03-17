@@ -44,10 +44,7 @@ export default function Expansion() {
         rules.
       </p>
 
-      <p>
-        Contact: President.lambdapsirho@gmail.com Executive President Head of
-        Expansion
-      </p>
+      <p>Contact our National Board President: nb.president@lambdapsirho.org</p>
     </div>
   );
 }
