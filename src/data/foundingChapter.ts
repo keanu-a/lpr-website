@@ -1,3 +1,4 @@
+import iotaClass from '@/assets/foundingChapter/iota-class.jpg';
 import xiClass from '@/assets/foundingChapter/xi-class.jpg';
 import sigmaClass from '@/assets/foundingChapter/sigma-class.jpg';
 import tauClass from '@/assets/foundingChapter/tau-class.jpg';
@@ -144,6 +145,7 @@ export const foundingChapterBrothers: {
       'Danny Phung',
       'Jordan Serrano',
     ],
+    photo: iotaClass,
   },
   {
     className: 'Kappa',
