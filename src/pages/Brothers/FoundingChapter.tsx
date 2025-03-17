@@ -40,31 +40,48 @@ export default function FoundingChapter() {
                 {data.greekLetter} - {data.className}
               </p>
             </AccordionTrigger>
-            <AccordionContent
-              className={`flex flex-col justify-around items-center gap-2 md:flex-row ${
-                index % 2 === 0 && 'md:flex-row-reverse'
-              }`}
-            >
-              {data.photo ? (
-                <img
-                  src={data.photo}
-                  className="w-fit rounded-md shadow-xl h-[16rem] object-cover md:h-[26rem] md:w-1/2"
-                  loading="lazy"
-                />
-              ) : (
-                <ImagePlaceholder className="w-96 h-72" />
-              )}
-              <div className="flex flex-col gap-2 p-2">
+            {data.className === 'Omega' ? (
+              <AccordionContent className="flex flex-col items-center gap-4">
                 <Title title={data.className} subtitle={data.greekLetter} />
-                <ul className="flex flex-wrap justify-center gap-4 md:flex-col">
+                <p>
+                  Our fallen brothers that rest in power, your legacy continues
+                  to live on in each brother of Lambda Psi Rho.
+                </p>
+                <ul className="flex flex-col justify-center gap-4 font-semibold">
                   {data.brothers.map((name, brotherIndex) => (
                     <li className="md:text-base" key={brotherIndex}>
                       {name}
                     </li>
                   ))}
                 </ul>
-              </div>
-            </AccordionContent>
+              </AccordionContent>
+            ) : (
+              <AccordionContent
+                className={`flex flex-col justify-around items-center gap-2 md:flex-row ${
+                  index % 2 === 0 && 'md:flex-row-reverse'
+                }`}
+              >
+                {data.photo ? (
+                  <img
+                    src={data.photo}
+                    className="w-fit rounded-md shadow-xl h-[16rem] object-cover md:h-[26rem] md:w-1/2"
+                    loading="lazy"
+                  />
+                ) : (
+                  <ImagePlaceholder className="w-96 h-72" />
+                )}
+                <div className="flex flex-col gap-2 p-2">
+                  <Title title={data.className} subtitle={data.greekLetter} />
+                  <ul className="flex flex-wrap justify-center gap-4 md:flex-col">
+                    {data.brothers.map((name, brotherIndex) => (
+                      <li className="md:text-base" key={brotherIndex}>
+                        {name}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </AccordionContent>
+            )}
           </AccordionItem>
         ))}
       </Accordion>
