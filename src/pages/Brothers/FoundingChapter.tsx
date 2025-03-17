@@ -45,7 +45,7 @@ export default function FoundingChapter() {
                 <Title title={data.className} subtitle={data.greekLetter} />
                 <p>
                   Our fallen brothers that rest in power, your legacy continues
-                  to live in each brother of Lambda Psi Rho.
+                  to live on in each brother of Lambda Psi Rho.
                 </p>
                 <ul className="flex flex-col justify-center gap-4 font-semibold">
                   {data.brothers.map((name, brotherIndex) => (
