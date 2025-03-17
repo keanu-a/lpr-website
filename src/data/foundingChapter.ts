@@ -3,6 +3,7 @@ import xiClass from '@/assets/foundingChapter/xi-class.jpg';
 import sigmaClass from '@/assets/foundingChapter/sigma-class.jpg';
 import tauClass from '@/assets/foundingChapter/tau-class.jpg';
 import phiClass from '@/assets/foundingChapter/phi-class.jpg';
+import chiClass from '@/assets/foundingChapter/chi-class.jpg';
 import alphaAlphaClass from '@/assets/foundingChapter/alpha-alpha-class.jpg';
 
 export const foundingFathers = [
@@ -276,6 +277,7 @@ export const foundingChapterBrothers: {
       'Mateo Sicento',
       'Lourenz Victoria',
     ],
+    photo: chiClass,
   },
   {
     className: 'Psi',
