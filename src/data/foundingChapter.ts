@@ -1,4 +1,5 @@
 import iotaClass from '@/assets/foundingChapter/iota-class.jpg';
+import nuClass from '@/assets/foundingChapter/nu-class.jpg';
 import xiClass from '@/assets/foundingChapter/xi-class.jpg';
 import sigmaClass from '@/assets/foundingChapter/sigma-class.jpg';
 import tauClass from '@/assets/foundingChapter/tau-class.jpg';
@@ -188,6 +189,7 @@ export const foundingChapterBrothers: {
     className: 'Nu',
     greekLetter: 'N',
     brothers: ['Ryan Kim', 'Raphael Perry', 'Kevin Samuel'],
+    photo: nuClass,
   },
   {
     className: 'Xi',

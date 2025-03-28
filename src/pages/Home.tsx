@@ -5,7 +5,7 @@ import { InstagramEmbed } from 'react-social-media-embed';
 import { AnimatePresence, motion } from 'motion/react';
 
 import Nav from '../components/Nav';
-import heroBg from '@/assets/activeHouse/active-house-sp-2025.jpg';
+import heroBg from '@/assets/hero.jpg';
 import Footer from '@/components/Footer';
 import Title from '@/components/Title';
 import Loader from '@/components/Loader';
@@ -52,7 +52,7 @@ export default function Home() {
             className="relative h-screen bg-cover bg-center"
             style={{ backgroundImage: `url(${heroBg})` }}
           >
-            <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
+            <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
             <Nav className="relative z-15" />
 
             <div className="absolute top-1/2 transform -translate-y-1/2 inset-0 flex flex-col items-center justify-center h-fit text-white z-5">
