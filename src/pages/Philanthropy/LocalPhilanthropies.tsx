@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 
-import nnccffLogo from '@/assets/philanthropy/nnccf-logo.jpg';
+import nnccffLogo from '@/assets/philanthropy/nnccf-logo.webp';
 
 import { Button } from '@/components/ui/button';
 import ScrollingGallery from '@/components/ScrollingGallery';
@@ -16,7 +16,7 @@ export default function LocalPhilanthropies() {
         <img
           src={nnccffLogo}
           alt="Northern Nevada Children's Cancer Foundation Logo"
-          className="md:w-1/2"
+          className="md:w-1/2 h-cover"
         />
 
         <Button>

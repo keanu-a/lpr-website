@@ -4,8 +4,8 @@ import {
   ExecutiveBoard,
   eboard,
 } from '@/data/activeHouse';
-import activeHousePhoto from '@/assets/activeHouse/active-house-sp-2025.jpg';
-import activeHouseEboardPhoto from '@/assets/activeHouse/eboard-sp-2025.jpg';
+import activeHousePhoto from '@/assets/activeHouse/active-house-sp-2025.webp';
+import activeHouseEboardPhoto from '@/assets/activeHouse/eboard-sp-2025.webp';
 
 export default function ActiveHousePage() {
   return (
@@ -17,6 +17,8 @@ export default function ActiveHousePage() {
         </div>
 
         <img
+          loading="lazy"
+          alt="Spring 2025 active house"
           src={activeHousePhoto}
           className="w-full rounded-lg shadow-lg object-cover md:h-[36rem]"
         />
@@ -39,6 +41,7 @@ export default function ActiveHousePage() {
           <p className="md:text-2xl">Spring 2025</p>
         </div>
         <img
+          alt="Spring 2025 Lambda Psi Rho executive board"
           src={activeHouseEboardPhoto}
           className="w-full rounded-lg shadow-lg object-cover md:w-2/3 md:h-[26rem]"
         />
