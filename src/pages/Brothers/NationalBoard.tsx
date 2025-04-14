@@ -18,6 +18,7 @@ export default function NationalBoard() {
             key={index}
           >
             <img
+              alt={`Lambda Psi Rho national board ${data.position} picture`}
               src={data.photo}
               className="h-96 object-cover rounded-lg shadow-lg"
               loading="lazy"

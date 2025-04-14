@@ -5,7 +5,7 @@ import { InstagramEmbed } from 'react-social-media-embed';
 import { AnimatePresence, motion } from 'motion/react';
 
 import Nav from '../components/Nav';
-import heroBg from '@/assets/hero.jpg';
+import heroBg from '@/assets/hero.webp';
 import Footer from '@/components/Footer';
 import Title from '@/components/Title';
 import Loader from '@/components/Loader';

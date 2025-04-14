@@ -1,11 +1,11 @@
-import iotaClass from '@/assets/foundingChapter/iota-class.jpg';
-import nuClass from '@/assets/foundingChapter/nu-class.jpg';
-import xiClass from '@/assets/foundingChapter/xi-class.jpg';
-import sigmaClass from '@/assets/foundingChapter/sigma-class.jpg';
-import tauClass from '@/assets/foundingChapter/tau-class.jpg';
-import phiClass from '@/assets/foundingChapter/phi-class.jpg';
-import chiClass from '@/assets/foundingChapter/chi-class.jpg';
-import alphaAlphaClass from '@/assets/foundingChapter/alpha-alpha-class.jpg';
+import iotaClass from '@/assets/foundingChapter/iota-class.webp';
+import nuClass from '@/assets/foundingChapter/nu-class.webp';
+import xiClass from '@/assets/foundingChapter/xi-class.webp';
+import sigmaClass from '@/assets/foundingChapter/sigma-class.webp';
+import tauClass from '@/assets/foundingChapter/tau-class.webp';
+import phiClass from '@/assets/foundingChapter/phi-class.webp';
+import chiClass from '@/assets/foundingChapter/chi-class.webp';
+import alphaAlphaClass from '@/assets/foundingChapter/alpha-alpha-class.webp';
 
 export const foundingFathers = [
   'Sean Aguon',
