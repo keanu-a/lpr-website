@@ -63,6 +63,7 @@ export default function FoundingChapter() {
               >
                 {data.photo ? (
                   <img
+                    alt="Lambda Psi Rho creset temporary photo"
                     src={data.photo}
                     className="w-fit rounded-md shadow-xl h-[16rem] object-cover md:h-[26rem] md:w-1/2"
                     loading="lazy"

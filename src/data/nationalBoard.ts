@@ -1,9 +1,9 @@
-import danny from '../assets/nationalBoard/danny.jpg';
-import jacob from '../assets/nationalBoard/jacob.jpg';
-import christian from '../assets/nationalBoard/christian.jpg';
-import raul from '../assets/nationalBoard/raul.jpg';
-import keanu from '../assets/nationalBoard/keanu.jpg';
-import josh from '../assets/nationalBoard/josh.jpg';
+import danny from '../assets/nationalBoard/danny.webp';
+import jacob from '../assets/nationalBoard/jacob.webp';
+import christian from '../assets/nationalBoard/christian.webp';
+import raul from '../assets/nationalBoard/raul.webp';
+import keanu from '../assets/nationalBoard/keanu.webp';
+import josh from '../assets/nationalBoard/josh.webp';
 
 export const term: string = 'Fall 2024 - Spring 2026';
 
