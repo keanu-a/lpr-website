@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 
-import crest from '../assets/crest.png';
+import crest from '../assets/crest.webp';
 
 export default function Loader() {
   return (
