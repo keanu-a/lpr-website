@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router';
-import crest from '../assets/crest.png';
+import crest from '../assets/crest.webp';
 import { cn } from '@/lib/utils';
 
 export default function CrestHeader({ className }: { className?: string }) {
