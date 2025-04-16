@@ -6,7 +6,7 @@ export default function Loader() {
   return (
     <div className="flex items-center justify-center">
       <motion.img
-        className="w-32 sm:w-36 h-fit"
+        className="w-auto max-h-36 object-contain"
         alt="Lambda Psi Rho crest"
         src={crest}
         initial={{ opacity: 0, translateX: '-100%' }}
