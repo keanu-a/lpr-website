@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
+import { Analytics } from '@vercel/analytics/react';
 
 import PageLayout from '@/layouts/PageLayout.tsx';
 import Home from '@/pages/Home.tsx';
@@ -50,6 +51,8 @@ export default function App() {
           />
         </Route>
       </Routes>
+
+      <Analytics />
     </BrowserRouter>
   );
 }
