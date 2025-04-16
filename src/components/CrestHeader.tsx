@@ -6,7 +6,7 @@ export default function CrestHeader({ className }: { className?: string }) {
   return (
     <NavLink to="/" className={cn('flex items-center', className)}>
       <img
-        className="w-24 md:w-28 h-fit"
+        className="w-auto max-h-28 object-contain md:max-h-32"
         src={crest}
         alt="Lambda Psi Rho Crest"
       />
