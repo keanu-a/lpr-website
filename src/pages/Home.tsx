@@ -61,7 +61,7 @@ export default function Home() {
                   initial={{ y: '100%' }}
                   animate={{ y: 0 }}
                   transition={{ duration: 1, delay: 0.5 }}
-                  className="text-md md:text-3xl"
+                  className="text-md md:text-xl lg:text-2xl"
                 >
                   Each Man a Foundation For
                 </motion.h1>
@@ -71,7 +71,7 @@ export default function Home() {
                   initial={{ y: '100%' }}
                   animate={{ y: 0 }}
                   transition={{ duration: 1.5, delay: 0.7 }}
-                  className="text-6xl sm:text-8xl md:text-9xl lg:text-[9rem] text-maroon uppercase font-bold"
+                  className="text-6xl tracking-tight text-maroon uppercase font-bold sm:text-7xl md:text-8xl lg:text-[10rem]"
                 >
                   Excellence
                 </motion.h1>
@@ -82,7 +82,7 @@ export default function Home() {
                   initial={{ y: '100%' }}
                   animate={{ y: 0 }}
                   transition={{ duration: 1, delay: 0.9 }}
-                  className="mt-20 md:text-xl"
+                  className="mt-10 md:text-xl"
                 >
                   The University of Nevada, Reno Est. 2006
                 </motion.h2>
