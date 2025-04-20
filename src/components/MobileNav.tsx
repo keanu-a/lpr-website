@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import { NavLink } from 'react-router';
 
 import {
@@ -13,7 +16,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { MenuIcon } from 'lucide-react';
-
 import { navigationMenuTriggerStyle } from './ui/navigation-menu';
 import CrestHeader from './CrestHeader';
 import { NavItem } from '@/types/nav';
@@ -21,9 +23,11 @@ import { NavItem } from '@/types/nav';
 const MOBILE_NAV_BUTTON_ICON_SIZE = 28;
 
 export default function MobileNav({ navBarItems }: { navBarItems: NavItem[] }) {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <div className="flex md:hidden">
-      <Sheet>
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger className="text-white">
           <MenuIcon size={MOBILE_NAV_BUTTON_ICON_SIZE} />
         </SheetTrigger>
@@ -46,6 +50,7 @@ export default function MobileNav({ navBarItems }: { navBarItems: NavItem[] }) {
                           key={linkIndex}
                           to={href}
                           className={navigationMenuTriggerStyle()}
+                          onClick={() => setIsOpen(false)}
                         >
                           {name}
                         </NavLink>
