@@ -297,4 +297,9 @@ export const foundingChapterBrothers: {
     greekLetter: 'AB',
     brothers: ['German Ardon Elias', 'Tri Huynh', 'Alven Lynn', 'Kai Stevens'],
   },
+  {
+    className: 'Alpha Gamma',
+    greekLetter: 'AΓ',
+    brothers: ['Darell Acebu'],
+  },
 ];
