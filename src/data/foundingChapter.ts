@@ -30,7 +30,7 @@ export const foundingChapterBrothers: {
   {
     className: 'Omega',
     greekLetter: 'Ω',
-    brothers: ['Θ: RB Rom', 'A: Andrew Lau'],
+    brothers: ['Θ: RB Rom', 'A: Andrew Lau', 'B: Kalena Pelekai-Wai'],
   },
   {
     className: 'Alpha',
