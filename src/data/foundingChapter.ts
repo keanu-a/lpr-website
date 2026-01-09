@@ -302,4 +302,15 @@ export const foundingChapterBrothers: {
     greekLetter: 'AΓ',
     brothers: ['Darell Acebu'],
   },
+  {
+    className: 'Alpha Delta',
+    greekLetter: 'AΔ',
+    brothers: [
+      'Edrei Bugtong',
+      'SL',
+      'Gabe Madayag',
+      'Matthew Ranara',
+      'Matteo Santos-Fernandez',
+    ],
+  },
 ];
