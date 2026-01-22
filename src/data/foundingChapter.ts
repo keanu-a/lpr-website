@@ -5,6 +5,7 @@ import sigmaClass from '@/assets/foundingChapter/sigma-class.webp';
 import tauClass from '@/assets/foundingChapter/tau-class.webp';
 import phiClass from '@/assets/foundingChapter/phi-class.webp';
 import chiClass from '@/assets/foundingChapter/chi-class.webp';
+import psiClass from '@/assets/foundingChapter/psi-class.webp';
 import alphaAlphaClass from '@/assets/foundingChapter/alpha-alpha-class.webp';
 
 export const foundingFathers = [
@@ -285,6 +286,7 @@ export const foundingChapterBrothers: {
     className: 'Psi',
     greekLetter: 'Ψ',
     brothers: ['Andre Oen', 'Adam Santos'],
+    photo: psiClass,
   },
   {
     className: 'Alpha Alpha',
